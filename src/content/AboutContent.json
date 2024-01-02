@@ -1,0 +1,26 @@
+{
+  "title": "Light, Fast & Simplified",
+  "text": "This web app is ready to use, invite your staffs, add students and start. we offer 30 days trial period, no credit card required, no strings attached",
+  "section": [
+    {
+      "title": "Attendance",
+      "content": "Take attendance batch wise, simple and easy ui",
+      "icon": "calendar.svg"
+    },
+    {
+      "title": "Payments",
+      "content": "collect payments, send payment links handle smoothly",
+      "icon": "rupee.svg"
+    },
+    {
+      "title": "Multi Users",
+      "content": "Invite users, streamline the process",
+      "icon": "users.svg"
+    },
+    {
+      "title": "30 days trial",
+      "content": "No Strings attached, just share us your feedback",
+      "icon": "award.svg"
+    }
+  ]
+}
