@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "build:digitalocean": "npm install --production=false && npm run build && npm ci --legacy-peer-deps",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
