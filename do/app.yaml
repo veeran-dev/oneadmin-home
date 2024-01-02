@@ -1,0 +1,6 @@
+name: oneadmin
+services:
+  - name: web
+    environment_slug: node-js
+    source_dir: .
+    build_command: npm ci --legacy-peer-deps
