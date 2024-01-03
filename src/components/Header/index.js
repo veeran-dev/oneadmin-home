@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react";
 import Loadable from "@loadable/component"
 import { Row, Col, Drawer } from "antd";
-import { CSSTransition } from "react-transition-group";
+// import { CSSTransition } from "react-transition-group";
 
 
 import Head from './Head';
