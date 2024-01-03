@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 import * as S from "./styles";
 
-const Block = ({ title, content }) => {
+const Block = ({ title, content, t }) => {
   return (
     <S.Container>
       <Fade left>

@@ -3,7 +3,7 @@ import { Row, Col } from "antd";
 
 
 import Loadable from "@loadable/component"
-import Fade from "react-reveal/Fade";
+import {Fade} from "react-awesome-reveal";
 
 import * as S from "./styles";
 
