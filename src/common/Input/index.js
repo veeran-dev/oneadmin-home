@@ -7,7 +7,7 @@ const Input = ({ id, name, placeholder, onChange }) => (
   <S.Container>
     <label htmlFor={name}>{id}</label>
     <S.Input
-      spellcheck="false"
+      spellCheck="false"
       placeholder={placeholder}
       name={name}
       id={name}

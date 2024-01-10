@@ -1,8 +1,8 @@
 import React, { useState, Fragment } from "react";
-import Loadable from "@loadable/component"
+// import Loadable from "@loadable/component"
 import { Row, Col, Drawer } from "antd";
 // import { CSSTransition } from "react-transition-group";
-
+import { StaticImage } from 'gatsby-plugin-image';
 
 import Head from './Head';
 import * as S from "./styles";
@@ -10,12 +10,12 @@ import * as S from "./styles";
 // const SvgIcon = Loadable(() => import("../../common/SvgIcon"));
 // const Button = Loadable(() => import("../../common/Button"));
 
-import SvgIcon from "../../common/SvgIcon";
+// import SvgIcon from "../../common/SvgIcon";
 import Button from "../../common/Button";
 
 const Header = () => {
-  const [isNavVisible] = useState(false);
-  const [isSmallScreen] = useState(false);
+  // const [isNavVisible] = useState(false);
+  // const [isSmallScreen] = useState(false);
   const [visible, setVisibility] = useState(false);
 
   const showDrawer = () => {
@@ -60,7 +60,13 @@ const Header = () => {
       <S.Container>
         <Row type="flex" align={"middle"} justify="space-between" gutter={20}>
           <S.LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.png" width={"214px"} height={"50px"} />
+            <StaticImage
+              src="../../../static/img/svg/logo.png"
+              alt={"logo"}
+              style={{ width:"214px", height:"50px" }}
+              formats={['auto', 'webp', 'avif']}
+              placeholder="blurred"
+            />
           </S.LogoContainer>
           <S.NotHidden>
             <MenuItem />

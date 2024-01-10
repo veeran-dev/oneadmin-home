@@ -7,7 +7,7 @@ const TextArea = ({ name, id, placeholder, onChange }) => (
   <S.Container>
     <label htmlFor={name}>{id}</label>
     <S.TextArea
-      spellcheck="false"
+      spellCheck="false"
       placeholder={placeholder}
       id={name}
       name={name}
