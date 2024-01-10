@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `oneadmin.in`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.oneadmin.in`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -11,6 +11,13 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-postcss",
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-8E6PKF7K76",
+        // Other options you might want to set, refer to the documentation
+      },
+    },
     {
       resolve: "gatsby-plugin-google-gtag",
       options: {
