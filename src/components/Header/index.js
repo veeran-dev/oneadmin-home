@@ -37,18 +37,15 @@ const Header = () => {
     return (
       <>
         <Head />
-        <S.CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <S.Span>{"Product"}</S.Span>
-        </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <S.Span>{"About"}</S.Span>
+        <S.CustomNavLinkSmall onClick={() => scrollTo("contact")}>
+          <S.Span>{"Contact"}</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+          onClick={() =>window.location.href = "https://app.oneadmin.in"}
         >
           <S.Span>
-            <Button>{"Contact"}</Button>
+            <Button>{"Login"}</Button>
           </S.Span>
         </S.CustomNavLinkSmall>
       </>
