@@ -1,21 +1,11 @@
-import React, { useState, Fragment } from "react";
-// import Loadable from "@loadable/component"
-import { Row, Col, Drawer } from "antd";
-// import { CSSTransition } from "react-transition-group";
-import { StaticImage } from 'gatsby-plugin-image';
-
-import Head from './Head';
 import * as S from "./styles";
-
-// const SvgIcon = Loadable(() => import("../../common/SvgIcon"));
-// const Button = Loadable(() => import("../../common/Button"));
-
-// import SvgIcon from "../../common/SvgIcon";
+import React, { useState, Fragment } from "react";
+import { Row, Col, Drawer } from "antd";
+import { StaticImage } from 'gatsby-plugin-image';
+import Head from './Head';
 import Button from "../../common/Button";
 
 const Header = () => {
-  // const [isNavVisible] = useState(false);
-  // const [isSmallScreen] = useState(false);
   const [visible, setVisibility] = useState(false);
 
   const showDrawer = () => {
@@ -36,7 +26,7 @@ const Header = () => {
     };
     return (
       <>
-        <Head />
+        
         <S.CustomNavLinkSmall onClick={() => scrollTo("contact")}>
           <S.Span>{"Contact"}</S.Span>
         </S.CustomNavLinkSmall>
@@ -53,6 +43,8 @@ const Header = () => {
   };
 
   return (
+    <>
+    <Head />
     <S.Header>
       <S.Container>
         <Row type="flex" align={"middle"} justify="space-between" gutter={20}>
@@ -78,7 +70,7 @@ const Header = () => {
           classNames="NavAnimation"
           unmountOnExit
         > */}
-          <Drawer closable={false} visible={visible} onClose={onClose}>
+          <Drawer closable={false} open={visible} onClose={onClose}>
             <Col style={{ marginBottom: "2.5rem" }}>
               <S.Label onClick={onClose}>
                 <Col span={12}>
@@ -94,6 +86,7 @@ const Header = () => {
         {/* </CSSTransition> */}
       </S.Container>
     </S.Header>
+    </>
   );
 };
 
