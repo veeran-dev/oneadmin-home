@@ -25,6 +25,7 @@ const Head = () => {
         content="Oneadmin is a free attendance management, fee management, course management Web application" />
       <meta property="twitter:site" content="https://oneadmin.in" />
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" async />
+      <link rel="icon" href="../../../static/img/svg/favicon.png" />
     </Helmet>
   );
 }
