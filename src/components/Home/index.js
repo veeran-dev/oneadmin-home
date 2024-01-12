@@ -22,7 +22,7 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="hero.svg"
+        icon="heroDesk-min.svg"
         id="intro"
       />
       <MiddleBlock

@@ -5,14 +5,14 @@ import 'antd/dist/reset.css';
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-import GlobalStyles from "../globalStyles";
+// import GlobalStyles from "../globalStyles";
 
 const Home = Loadable(() => import(`../components/Home`));
 
 const MainRouter = () => {
   return (
     <>
-      <GlobalStyles />
+      {/* <GlobalStyles /> */}
       <Header />
         <Router>
           <Home path="/" />
