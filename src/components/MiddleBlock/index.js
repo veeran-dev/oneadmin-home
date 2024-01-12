@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col } from "antd";
-
 import Loadable from "@loadable/component"
 import {Fade} from "react-awesome-reveal";
 

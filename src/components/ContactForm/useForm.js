@@ -18,7 +18,7 @@ const useForm = (validate) => {
     event.preventDefault();
     setErrors(validate(values));
     // Your url for API
-    const url = 'http://backend.oneadmin.in/contact/send';
+    const url = 'https://backend.oneadmin.in/contact/send';
     if (Object.keys(values).length === 3) {
       axios
         .post(url, {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Router } from "@reach/router";
 import Loadable from '@loadable/component';
-
+import 'antd/dist/reset.css';
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 

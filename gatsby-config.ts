@@ -26,6 +26,8 @@ const config: GatsbyConfig = {
         ],
       }
     },
+    // 'gatsby-plugin-antd',
+    'gatsby-plugin-less',
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {
